@@ -332,135 +332,8 @@ img {
     box-shadow: 0 10px 24px rgba(45, 52, 54, 0.12);
 }
 
-.btn-secondary {
-    background: transparent;
-    border: 1.5px solid rgba(45, 52, 54, 0.22);
-    color: var(--heading);
-}
-
 .btn-register {
     width: 100%;
-}
-
-.hero-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-top: 28px;
-}
-
-.hero-actions .btn-register,
-.hero-actions .btn-secondary {
-    width: auto;
-    min-width: 180px;
-}
-
-.hero-trust,
-.form-trust {
-    margin: 16px 0 0;
-    font-size: 0.95rem;
-    color: #6b6b6b;
-}
-
-.cta-strip {
-    margin-top: 40px;
-    padding: 20px 24px;
-    border-radius: 18px;
-    background: rgba(184, 212, 227, 0.28);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-}
-
-.cta-strip p {
-    margin: 0;
-    font-weight: 600;
-    color: var(--heading);
-}
-
-.cta-strip-actions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.cta-strip .btn-register,
-.cta-strip .btn-secondary {
-    width: auto;
-}
-
-.program-module details {
-    border: none;
-}
-
-.program-module summary {
-    list-style: none;
-    cursor: pointer;
-}
-
-.program-module summary::-webkit-details-marker {
-    display: none;
-}
-
-.program-module summary h3 {
-    margin: 0 0 8px;
-}
-
-.program-teaser {
-    display: block;
-    font-weight: 500;
-    color: var(--text);
-}
-
-.program-module details[open] .program-teaser {
-    display: none;
-}
-
-.program-module details p {
-    margin: 14px 0 0;
-}
-
-.program-module summary::after {
-    content: "Подробнее";
-    display: inline-block;
-    margin-top: 10px;
-    font-size: 0.92rem;
-    font-weight: 600;
-    color: #3d6b82;
-}
-
-.program-module details[open] summary::after {
-    content: "Свернуть";
-}
-
-.legal-highlights {
-    margin: 0 0 20px;
-    padding-left: 20px;
-    max-width: 760px;
-}
-
-.legal-highlights li {
-    margin-bottom: 10px;
-}
-
-.legal-details {
-    max-width: 760px;
-    background: var(--white);
-    border-radius: 16px;
-    padding: 16px 20px;
-    box-shadow: var(--shadow);
-}
-
-.legal-details summary {
-    cursor: pointer;
-    font-weight: 700;
-    color: var(--heading);
-}
-
-.legal-details .legal-block {
-    margin-top: 16px;
 }
 
 .registration-section {
@@ -476,15 +349,6 @@ img {
     box-shadow: var(--shadow);
 }
 
-.selected-plan {
-    margin: -8px 0 20px;
-    padding: 10px 14px;
-    border-radius: 12px;
-    background: rgba(200, 230, 201, 0.55);
-    color: var(--heading);
-    font-weight: 600;
-}
-
 .form-grid {
     display: grid;
     gap: 18px;
@@ -495,12 +359,6 @@ img {
     gap: 8px;
     font-weight: 600;
     color: var(--heading);
-}
-
-.field-hint {
-    font-weight: 500;
-    font-size: 0.9rem;
-    color: #6b6b6b;
 }
 
 .form-grid input,
@@ -514,14 +372,8 @@ img {
 }
 
 .form-grid textarea {
-    min-height: 72px;
+    min-height: 140px;
     resize: vertical;
-}
-
-.form-grid input:focus,
-.form-grid textarea:focus {
-    outline: 2px solid rgba(184, 212, 227, 0.9);
-    border-color: #9bbfd3;
 }
 
 .form-message {
@@ -558,12 +410,5 @@ img {
     .registration-panel,
     .hero-note {
         padding: 24px;
-    }
-
-    .hero-actions .btn-register,
-    .hero-actions .btn-secondary,
-    .cta-strip .btn-register,
-    .cta-strip .btn-secondary {
-        width: 100%;
     }
 }
