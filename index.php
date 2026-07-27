@@ -38,6 +38,11 @@
                 помогают сохранить спокойствие и принимать правильные решения под давлением времени.
                 После занятия вы получите сертификат и памятку по алгоритмам первой помощи.
             </div>
+            <div class="hero-actions">
+                <button type="button" class="btn btn-register" data-scroll-target="registration">Записаться на курс</button>
+                <button type="button" class="btn btn-secondary" data-scroll-target="pricing">Смотреть тарифы</button>
+            </div>
+            <p class="hero-trust">Ответим в течение дня · группа до 14 человек · сертификат после практики</p>
         </div>
     </header>
 
@@ -67,6 +72,13 @@
                         <p>До 14 человек в группе, чтобы каждый успел отработать все ключевые навыки несколько раз.</p>
                     </article>
                 </div>
+                <div class="cta-strip">
+                    <p>Готовы отработать навыки на практике? Выберите тариф или сразу оставьте заявку.</p>
+                    <div class="cta-strip-actions">
+                        <button type="button" class="btn btn-register" data-scroll-target="registration">Записаться</button>
+                        <button type="button" class="btn btn-secondary" data-scroll-target="pricing">Смотреть тарифы</button>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -81,8 +93,12 @@
                 </p>
                 <div class="program-list">
                     <article class="program-module">
-                        <h3>10:00 – 11:00 · Оценка обстановки и безопасность</h3>
-                        <p>
+                        <details>
+                            <summary>
+                                <h3>10:00 – 11:00 · Оценка обстановки и безопасность</h3>
+                                <span class="program-teaser">Как безопасно подойти и оценить ситуацию</span>
+                            </summary>
+                            <p>
                             Первый час посвящён тому, как не бросаться помогать вслепую и не попасть
                             самому под угрозу. Мы разберём последовательность действий при любом
                             происшествии: остановиться, оглядеть место, определить число пострадавших,
@@ -94,10 +110,15 @@
                             попытка «оживить» человека не тем способом — и вы отработаете спокойный
                             сценарий на манекене и в паре с напарником.
                         </p>
+                        </details>
                     </article>
                     <article class="program-module">
-                        <h3>11:00 – 12:30 · Сердечно-легочная реанимация</h3>
-                        <p>
+                        <details>
+                            <summary>
+                                <h3>11:00 – 12:30 · Сердечно-легочная реанимация</h3>
+                                <span class="program-teaser">Алгоритм СЛР и работа с AED на практике</span>
+                            </summary>
+                            <p>
                             Это центральный блок курса: полтора часа интенсивной практики по алгоритму
                             СЛР для взрослых. Вы научитесь определять, когда нужна реанимация, как
                             правильно положить пострадавшего, куда и как с силой надавливать на грудную
@@ -109,10 +130,15 @@
                             раз пройдёт полный цикл «обнаружил — проверил — начал СЛР — дождался
                             скорой», чтобы руки запомнили движения, а голова — порядок действий.
                         </p>
+                        </details>
                     </article>
                     <article class="program-module">
-                        <h3>12:30 – 13:30 · Обед и разбор кейсов</h3>
-                        <p>
+                        <details>
+                            <summary>
+                                <h3>12:30 – 13:30 · Обед и разбор кейсов</h3>
+                                <span class="program-teaser">Разбор реальных историй и ответы на вопросы</span>
+                            </summary>
+                            <p>
                             После насыщенного утреннего блока — пауза и спокойный разбор реальных
                             историй из практики инструкторов. Мы разберём случаи, когда своевременная
                             помощь очевидца действительно спасла жизнь, и ситуации, где из-за
@@ -124,10 +150,15 @@
                             помогает закрепить материал и понять, что ошибки на тренировке — нормальная
                             часть обучения, а на курсе как раз для этого и создана безопасная среда.
                         </p>
+                        </details>
                     </article>
                     <article class="program-module">
-                        <h3>13:30 – 15:00 · Кровотечения и шок</h3>
-                        <p>
+                        <details>
+                            <summary>
+                                <h3>13:30 – 15:00 · Кровотечения и шок</h3>
+                                <span class="program-teaser">Остановка кровотечений и признаки шока</span>
+                            </summary>
+                            <p>
                             После обеда переходим к одной из самых частых причин смертности при
                             травмах — наружным кровотечениям. Вы научитесь отличать капиллярное,
                             венозное и артериальное кровотечение по виду крови и скорости потери,
@@ -139,10 +170,15 @@
                             будете работать с имитаторами ран, учиться не бояться крови и действовать
                             системно, даже если вокруг шумно и страшно.
                         </p>
+                        </details>
                     </article>
                     <article class="program-module">
-                        <h3>15:00 – 16:30 · Переломы, вывихи, ожоги</h3>
-                        <p>
+                        <details>
+                            <summary>
+                                <h3>15:00 – 16:30 · Переломы, вывихи, ожоги</h3>
+                                <span class="program-teaser">Иммобилизация, ожоги, типичные ошибки</span>
+                            </summary>
+                            <p>
                             В этом модуле мы разбираем травмы, с которыми люди чаще всего сталкиваются
                             дома, на улице, на работе и в спорте. Вы научитесь распознавать признаки
                             перелома и вывиха, фиксировать конечность подручными средствами, не
@@ -154,10 +190,15 @@
                             сделать временную шину, и каждый участник попробует иммобилизацию на
                             напарнике под контролем группы.
                         </p>
+                        </details>
                     </article>
                     <article class="program-module">
-                        <h3>16:30 – 18:00 · Итоговая практика и сертификация</h3>
-                        <p>
+                        <details>
+                            <summary>
+                                <h3>16:30 – 18:00 · Итоговая практика и сертификация</h3>
+                                <span class="program-teaser">Сценарии с несколькими пострадавшими и сертификация</span>
+                            </summary>
+                            <p>
                             Завершающий блок — это уже не отдельные навыки, а цельные сценарии, как
                             в реальной жизни. Вас ждут упражнения с несколькими пострадавшими,
                             шумом, ограниченным временем и необходимостью расставить приоритеты: кому
@@ -169,6 +210,7 @@
                             и знаете, с чего начать, если рядом окажется человек, которому нужна
                             помощь.
                         </p>
+                        </details>
                     </article>
                 </div>
             </div>
@@ -207,6 +249,13 @@
                         <p>Подозрение на травму шеи и спины, когда нельзя менять положение, фиксация головы и ожидание медиков.</p>
                     </article>
                 </div>
+                <div class="cta-strip">
+                    <p>Разобрали основные состояния — следующий шаг: выбрать формат участия и записаться.</p>
+                    <div class="cta-strip-actions">
+                        <button type="button" class="btn btn-register" data-scroll-target="registration">Записаться</button>
+                        <button type="button" class="btn btn-secondary" data-scroll-target="pricing">Смотреть тарифы</button>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -214,31 +263,45 @@
             <div class="container">
                 <h2 class="section-title">Юридические аспекты</h2>
                 <p class="section-lead">
-                    Многие люди боятся помогать из-за страха юридической ответственности. На курсе
-                    мы отдельно разбираем, что говорит закон и как действовать правильно.
+                    Закон защищает тех, кто помогает добросовестно. На курсе мы разберём ваши права
+                    и как действовать уверенно — без лишнего страха перед ответственностью.
                 </p>
-                <div class="legal-block">
-                    <h3>Добросовестный помощник</h3>
-                    <p>
-                        В России действует принцип добросовестного помощника: если вы помогаете пострадавшему
-                        в разумных пределах своих возможностей и без грубой неосторожности, закон защищает
-                        вас от необоснованных претензий.
-                    </p>
-                </div>
-                <div class="legal-block">
-                    <h3>Границы ответственности</h3>
-                    <p>
-                        Мы разбираем, какие действия считаются разумными, когда нужно дождаться медиков,
-                        и как фиксировать обстоятельства происшествия, если вы оказались свидетелем или участником помощи.
-                    </p>
-                </div>
-                <div class="legal-block">
-                    <h3>Документирование и вызов служб</h3>
-                    <p>
-                        Как правильно передать информацию диспетчеру, что сообщить медикам по прибытии и
-                        какие данные важно сохранить для дальнейшего разбирательства или страхового случая.
-                    </p>
-                </div>
+                <ul class="legal-highlights">
+                    <li>Закон о добросовестном помощнике защищает от необоснованных претензий</li>
+                    <li>Помощь в разумных пределах — это норма, а не риск</li>
+                    <li>Покажем, как вызвать службы и передать информацию медикам</li>
+                </ul>
+                <details class="legal-details">
+                    <summary>Подробнее...</summary>
+                    <div class="legal-block">
+                        <h3>Добросовестный помощник</h3>
+                        <p>
+                            В России действует принцип добросовестного помощника: если вы помогаете пострадавшему
+                            в разумных пределах своих возможностей и без грубой неосторожности, закон защищает
+                            вас от необоснованных претензий.
+                        </p>
+                    </div>
+                </details>
+                <details class="legal-details">
+                    <summary>Подробнее...</summary>
+                    <div class="legal-block">
+                        <h3>Границы ответственности</h3>
+                        <p>
+                            Мы разбираем, какие действия считаются разумными, когда нужно дождаться медиков,
+                            и как фиксировать обстоятельства происшествия, если вы оказались свидетелем или участником помощи.
+                        </p>
+                    </div>
+                </details>
+                <details class="legal-details">
+                    <summary>Подробнее...</summary>
+                    <div class="legal-block">
+                        <h3>Документирование и вызов служб</h3>
+                        <p>
+                            Как правильно передать информацию диспетчеру, что сообщить медикам по прибытии и
+                            какие данные важно сохранить для дальнейшего разбирательства или страхового случая.
+                        </p>
+                    </div>
+                </details>
             </div>
         </section>
 
@@ -287,7 +350,7 @@
             </div>
         </section>
 
-        <section class="section pricing-section">
+        <section class="section pricing-section" id="pricing">
             <div class="container">
                 <h2 class="section-title">Тарифы</h2>
                 <p class="section-lead">
@@ -302,7 +365,7 @@
                             <li>Сертификат и памятка</li>
                             <li>Кофе-брейки</li>
                         </ul>
-                        <button type="button" class="btn btn-register">Записаться</button>
+                        <button type="button" class="btn btn-register" data-plan="Базовый" data-scroll-target="registration">Записаться</button>
                     </article>
                     <article class="pricing-card featured">
                         <h3>Расширенный</h3>
@@ -312,7 +375,7 @@
                             <li>Набор перевязочных материалов</li>
                             <li>Дополнительный практический блок</li>
                         </ul>
-                        <button type="button" class="btn btn-register">Записаться</button>
+                        <button type="button" class="btn btn-register" data-plan="Расширенный" data-scroll-target="registration">Записаться</button>
                     </article>
                     <article class="pricing-card">
                         <h3>Корпоративный</h3>
@@ -322,7 +385,7 @@
                             <li>Консультация для HR или руководителя</li>
                             <li>Отчёт о прохождении для работодателя</li>
                         </ul>
-                        <button type="button" class="btn btn-register">Записаться</button>
+                        <button type="button" class="btn btn-register" data-plan="Корпоративный" data-scroll-target="registration">Записаться</button>
                     </article>
                 </div>
             </div>
@@ -333,27 +396,32 @@
                 <div class="registration-panel">
                     <h2 class="section-title">Записаться на курс</h2>
                     <p class="section-lead">
-                        Оставьте заявку, и мы свяжемся с вами, чтобы подтвердить место и ответить на вопросы.
+                        Заполните короткую заявку — перезвоним в течение дня, подтвердим место
+                        и ответим на вопросы.
                     </p>
+                    <p class="selected-plan" id="selected-plan" hidden></p>
                     <form class="form-grid" id="registration-form" action="api/submit.php" method="post">
+                        <input type="hidden" name="bot_session_id" value="">
                         <label>
                             Имя
-                            <input type="text" name="name" required autocomplete="name">
+                            <input type="text" name="name" required autocomplete="name" placeholder="Как к вам обращаться?">
                         </label>
                         <label>
                             Телефон
-                            <input type="tel" name="phone" required autocomplete="tel">
+                            <input type="tel" name="phone" required autocomplete="tel" placeholder="+7 (___) ___-__-__">
                         </label>
                         <label>
                             E-mail
-                            <input type="email" name="email" required autocomplete="email">
+                            <input type="email" name="email" required autocomplete="email" placeholder="example@mail.ru">
                         </label>
                         <label>
                             Цель прохождения курса
-                            <textarea name="purpose" required></textarea>
+                            <span class="field-hint">Достаточно одной фразы — зачем вам курс</span>
+                            <textarea name="purpose" required placeholder="Например: для работы, семьи, путешествий"></textarea>
                         </label>
                         <button type="submit" class="btn">Отправить заявку</button>
                     </form>
+                    <p class="form-trust">Данные не передаём третьим лицам · без спама</p>
                     <p class="form-message" id="form-message" aria-live="polite"></p>
                 </div>
             </div>

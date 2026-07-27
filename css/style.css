@@ -161,17 +161,68 @@ img {
 }
 
 .feature-card,
-.program-module,
 .injury-card {
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .feature-card:hover,
-.program-module:hover,
 .injury-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 16px 36px rgba(45, 52, 54, 0.12);
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 32px;
+}
+
+.hero-trust {
+    margin: 18px 0 0;
+    font-size: 0.95rem;
+    color: #6c757d;
+}
+
+.btn-secondary {
+    background: var(--white);
+    border: 2px solid var(--blue);
+    color: var(--heading);
+}
+
+.btn-secondary:hover {
+    background: var(--bg-soft);
+}
+
+.cta-strip {
+    margin-top: 40px;
+    padding: 28px 32px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(184, 212, 227, 0.35), rgba(200, 230, 201, 0.25));
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.cta-strip p {
+    margin: 0;
+    max-width: 520px;
+    font-size: 1.05rem;
+    color: var(--heading);
+}
+
+.cta-strip-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.cta-strip .btn-register {
+    width: auto;
+    min-width: 160px;
 }
 
 .program-list {
@@ -181,6 +232,53 @@ img {
 
 .program-module {
     border-left: 6px solid var(--blue);
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.program-module details {
+    padding: 28px;
+}
+
+.program-module summary {
+    list-style: none;
+    cursor: pointer;
+    display: grid;
+    gap: 6px;
+}
+
+.program-module summary::-webkit-details-marker {
+    display: none;
+}
+
+.program-module summary::after {
+    content: "+";
+    position: absolute;
+    right: 28px;
+    top: 28px;
+    font-size: 1.4rem;
+    color: var(--heading);
+    line-height: 1;
+}
+
+.program-module details[open] summary::after {
+    content: "−";
+}
+
+.program-module summary h3 {
+    margin: 0;
+    padding-right: 36px;
+}
+
+.program-teaser {
+    font-size: 0.95rem;
+    color: #6c757d;
+    font-weight: 400;
+}
+
+.program-module details p {
+    margin: 16px 0 0;
 }
 
 .program-module:nth-child(2) { border-left-color: var(--mint); }
@@ -215,8 +313,51 @@ img {
     border-left: 6px solid var(--pink);
 }
 
-.legal-block:last-child {
+.legal-highlights {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px;
+    display: grid;
+    gap: 12px;
+}
+
+.legal-highlights li {
+    padding: 14px 18px;
+    background: var(--white);
+    border-radius: 14px;
+    box-shadow: var(--shadow);
+}
+
+.legal-details {
+    margin-bottom: 14px;
+    background: var(--white);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.legal-details:last-child {
     margin-bottom: 0;
+}
+
+.legal-details summary {
+    padding: 18px 28px;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--heading);
+    list-style: none;
+}
+
+.legal-details summary::-webkit-details-marker {
+    display: none;
+}
+
+.legal-details .legal-block {
+    margin: 0;
+    border-left: none;
+    border-top: 1px solid #ece7e1;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 .emotional-photo {
@@ -372,8 +513,37 @@ img {
 }
 
 .form-grid textarea {
-    min-height: 140px;
+    min-height: 72px;
     resize: vertical;
+}
+
+.form-grid input:focus,
+.form-grid textarea:focus {
+    outline: 2px solid var(--blue);
+    outline-offset: 2px;
+    border-color: var(--blue);
+}
+
+.selected-plan {
+    margin: 0 0 20px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    background: rgba(184, 212, 227, 0.35);
+    color: var(--heading);
+    font-weight: 600;
+}
+
+.field-hint {
+    font-size: 0.88rem;
+    font-weight: 400;
+    color: #6c757d;
+}
+
+.form-trust {
+    margin: 16px 0 0;
+    font-size: 0.9rem;
+    color: #6c757d;
+    text-align: center;
 }
 
 .form-message {
@@ -410,5 +580,24 @@ img {
     .registration-panel,
     .hero-note {
         padding: 24px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .hero-actions .btn,
+    .cta-strip-actions .btn {
+        width: 100%;
+    }
+
+    .cta-strip {
+        padding: 24px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .cta-strip .btn-register {
+        width: 100%;
     }
 }
