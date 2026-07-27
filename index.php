@@ -38,11 +38,6 @@
                 помогают сохранить спокойствие и принимать правильные решения под давлением времени.
                 После занятия вы получите сертификат и памятку по алгоритмам первой помощи.
             </div>
-            <div class="countdown" id="countdown">
-                <div class="countdown-item"><span id="countdown-days">0</span> дней</div>
-                <div class="countdown-item"><span id="countdown-hours">0</span> часов</div>
-                <div class="countdown-item"><span id="countdown-minutes">0</span> минут</div>
-            </div>
         </div>
     </header>
 
@@ -330,44 +325,6 @@
                         <button type="button" class="btn btn-register">Записаться</button>
                     </article>
                 </div>
-                <div class="social-proof">
-                    <div class="social-proof-item">
-                        <span class="social-proof-number" id="registered-count">0</span>
-                        <span class="social-proof-label">уже записалось</span>
-                    </div>
-                    <div class="social-proof-item">
-                        <span class="social-proof-number">14</span>
-                        <span class="social-proof-label">мест в группе</span>
-                    </div>
-                    <div class="social-proof-item">
-                        <span class="social-proof-number">Осталось <span id="places-left">14</span></span>
-                        <span class="social-proof-label">свободных мест</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section faq-section">
-            <div class="container">
-                <h2 class="section-title">Частые вопросы</h2>
-                <div class="faq-list">
-                    <details class="faq-item" open>
-                        <summary>Нужна ли медицинская подготовка?</summary>
-                        <p>Нет, курс рассчитан на людей без медицинского образования. Мы начинаем с самых основ.</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary>Что взять с собой?</summary>
-                        <p>Удобную одежду, в которой не жалко сесть на пол. Все материалы предоставляются.</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary>Выдаётся ли сертификат?</summary>
-                        <p>Да, именной сертификат о прохождении курса и памятка с алгоритмами действий.</p>
-                    </details>
-                    <details class="faq-item">
-                        <summary>Можно ли вернуть деньги?</summary>
-                        <p>Да, полный возврат при отмене за 48 часов до начала курса.</p>
-                    </details>
-                </div>
             </div>
         </section>
 
@@ -379,29 +336,23 @@
                         Оставьте заявку, и мы свяжемся с вами, чтобы подтвердить место и ответить на вопросы.
                     </p>
                     <form class="form-grid" id="registration-form" action="api/submit.php" method="post">
-                        <div class="form-step" id="form-step-1">
-                            <label>
-                                Имя
-                                <input type="text" name="name" required autocomplete="name">
-                            </label>
-                            <label>
-                                Телефон
-                                <input type="tel" name="phone" required autocomplete="tel" placeholder="+7 (___) ___-__-__">
-                            </label>
-                            <button type="button" class="btn btn-next-step" id="btn-next-step">Далее</button>
-                        </div>
-                        <div class="form-step hidden" id="form-step-2">
-                            <label>
-                                E-mail
-                                <input type="email" name="email" required autocomplete="email">
-                            </label>
-                            <label>
-                                Цель прохождения курса
-                                <textarea name="purpose" required></textarea>
-                            </label>
-                            <button type="submit" class="btn">Отправить заявку</button>
-                            <button type="button" class="btn btn-back" id="btn-back">← Назад</button>
-                        </div>
+                        <label>
+                            Имя
+                            <input type="text" name="name" required autocomplete="name">
+                        </label>
+                        <label>
+                            Телефон
+                            <input type="tel" name="phone" required autocomplete="tel">
+                        </label>
+                        <label>
+                            E-mail
+                            <input type="email" name="email" required autocomplete="email">
+                        </label>
+                        <label>
+                            Цель прохождения курса
+                            <textarea name="purpose" required></textarea>
+                        </label>
+                        <button type="submit" class="btn">Отправить заявку</button>
                     </form>
                     <p class="form-message" id="form-message" aria-live="polite"></p>
                 </div>
@@ -428,42 +379,6 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/110949451" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
-
-    <!-- Sticky CTA -->
-    <div class="sticky-cta" id="sticky-cta">
-        <div class="container sticky-cta-inner">
-            <span class="sticky-cta-text">Курс первой помощи · 15 августа</span>
-            <button type="button" class="btn btn-sticky-cta" data-scroll-to="registration">
-                Записаться
-            </button>
-        </div>
-    </div>
-
-    <!-- Exit-intent popup -->
-    <div class="exit-popup" id="exit-popup">
-        <div class="exit-popup-overlay"></div>
-        <div class="exit-popup-content">
-            <button class="exit-popup-close" id="exit-popup-close" aria-label="Закрыть">&times;</button>
-            <h3>Уже уходите?</h3>
-            <p>Оставьте телефон — мы перезвоним и расскажем всё о курсе. Никакого спама.</p>
-            <form class="exit-popup-form" id="exit-popup-form">
-                <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
-                <button type="submit" class="btn">Перезвоните мне</button>
-            </form>
-            <p class="exit-popup-note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных</p>
-        </div>
-    </div>
-
-    <!-- Telegram float -->
-    <a href="https://t.me/naition_bot?start=course"
-       class="telegram-float"
-       target="_blank"
-       rel="noopener"
-       aria-label="Написать в Telegram">
-        <svg viewBox="0 0 24 24" width="28" height="28" fill="white">
-            <path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
-        </svg>
-    </a>
 
 </body>
 </html>
